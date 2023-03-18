@@ -1,4 +1,14 @@
 body {
-    background: blue;
+    background:whitesmoke;
+  }
+  h1{
+    text-align: center;
+    margin-top: auto;
+    padding: auto;
+    color: maroon;
+  }
+  h2{
+    text-align: left;
+    color: #000;
   }
   
