@@ -11,4 +11,8 @@ body {
     text-align: left;
     color: #000;
   }
-  
+  button{
+    height: auto;
+    background-color: maroon;
+    color: white;
+  }

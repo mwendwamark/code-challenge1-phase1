@@ -11,34 +11,34 @@ function getStudentGrade(grade){
     }
     //These are the conditions of the grades
 if (grade >79 && grade<101) {
-    console.log(gradeSelector)
+    console.log(getStudentGrade(grade))
     return "A"
     
 }
 else if (grade> 59 && grade< 78) {
-    console.log(gradeSelector)
+    console.log(getStudentGrade(grade))
     return "B"
     
 }
 else if (grade>48 && grade< 58) {
-    console.log(gradeSelector)
+    console.log(getStudentGrade(grade))
 
     return "C"
     
 }
 else if (grade>39 && grade<=48) {
-    console.log(gradeSelector)
+    console.log(getStudentGrade(grade))
     return "D"
     
 }
 else if(grade>0 && grade<=40) {
-    console.log(gradeSelector)
+    console.log(getStudentGrade(grade))
     return "E"
 }
  
 else{ 
     return "This is an invalid mark.Please try again"}
 }
-
+getStudentGrade()
 
 
