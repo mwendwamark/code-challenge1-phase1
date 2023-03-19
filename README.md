@@ -12,7 +12,7 @@ Contributing
 If you would like to contribute to this project, please submit a pull request or contact the author.
 
 # Credits
-This application was created by Mark Mwendwa. The grading logic was adapted from [source of grading logic].
+This application was created by Mark Mwendwa. The grading logic was adapted from `getStudentGrade()`
 
 # License
 This code is licensed under the MIT License.

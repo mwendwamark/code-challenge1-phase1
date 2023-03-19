@@ -16,8 +16,6 @@ body {
     background-color: maroon;
     color: white;
   }
-  section{
-    padding: 20px;
-    font-size: larger;
-    
+  output{
+    color: green;
   }
