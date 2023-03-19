@@ -1,14 +1,21 @@
-# code-challenge1-phase1
-# This program is based on grading the students marks.
-The marks are between 0 marks to 100 marks.
-Anything below 0 (eg. -74  ) , above 100 (eg. 301) or a string, counts as an invalid grade, and it returns a message "This is an invalid mark. Please try again"
+# Studnet Grade Generator
+This is a simple web application that allows a user to input a grade between 0 and 100, and displays the corresponding grade letter (A, B, C, D, or F) based on the value of the grade.
 
-The are five grades and each grade has a limit according to the marks namely:
-*Grade "A" = anything > 79 && < 101
-*Grade "B" = anything > 59 && < 78
-*Grade "C" = anything > 48 && < 58
-*Grade "D" = anything > 39 && < 48
-*Grade "E" = anything > 0  && <= 40
+# Installation
+To use this application, simply download the code files and open the index.html file in a web browser.
+
+# Usage
+1.Enter a grade between 0 and 100 in the input field.
+2.Click the "Submit" button to generate the corresponding grade letter.
+3.The grade letter will be displayed in the box below the input field.
+Contributing
+If you would like to contribute to this project, please submit a pull request or contact the author.
+
+# Credits
+This application was created by Mark Mwendwa. The grading logic was adapted from [source of grading logic].
+
+# License
+This code is licensed under the MIT License.
 
 
 

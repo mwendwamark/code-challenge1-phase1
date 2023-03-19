@@ -1,32 +1,36 @@
 
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-  
 </head>
 <body>
-  <h1>Student Grade Generator </h1>  
-    <script src="script.js"></script> 
-    <h2>Enter your mark here</h2>
-    
-    <div>
-        <input type="number" id="gradeTextBox">
-        
-        <button onclick="getStudentGrade()" type="button">Submit</button>
-        <div id="getStudentGrade"></div>
-    </div>
-    <div>
-        <script>
-            
-            alert ("ENTER MARKS")
-            
-        </script>
-    </div>  
+    <h1>Student Grade Generator</h1>
+    <h2>Enter your mark here:</h2>
+    <input type="number" id="gradeTextBox" min="0" max="100">
+    <button onclick="getStudentGrade()" type="button">Submit</button>
+    <div id="studentGrade"></div>
+    <script>
+        function getStudentGrade() {
+            const gradeTextBox = document.getElementById("gradeTextBox");
+            const grade = Number(gradeTextBox.value);
+            if (isNaN(grade) || grade < 0 || grade > 100) {
+                document.getElementById("studentGrade").innerHTML = "Invalid marks. Please enter a mark(s) between 0 and 100.";
+            } else if (grade >78 && grade<101) {
+                document.getElementById("studentGrade").innerHTML = "A";
+            } else if (grade>= 59 && grade< 78) {
+                document.getElementById("studentGrade").innerHTML = "B";
+            } else if (grade>48 && grade< 58) {
+                document.getElementById("studentGrade").innerHTML = "C";
+            } else if (grade>39 && grade<=48) {
+                document.getElementById("studentGrade").innerHTML = "D";
+            } else {
+                document.getElementById("studentGrade").innerHTML = "F";
+            }
+        }
+    </script>
 </body>
 </html>
