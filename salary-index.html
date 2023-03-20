@@ -2,10 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="salary-index.css">
+
     <title>Net Salary Calculator</title>
   </head>
   <body>
-    <script src="salary-script.js"></script>
+
     <h1>Net Salary Calculator</h1>
     <form>
       <label for="basicSalary">Basic Salary:</label>
@@ -27,7 +28,7 @@
         const taxableSalary = basicSalary + benefits; // calculate taxable salary
         const kraTax = taxableSalary * kraRate; // calculate KRA tax
         const nhifDeductions = calculateNHIFDeductions(basicSalary); // calculate NHIF deductions
-        const nssfDeductions = taxableSalary *  nssfRate; // calculate NSSF deductions
+        const nssfDeductions = taxableSalary * nssfRate; // calculate NSSF deductions
 
         const grossSalary = taxableSalary - kraTax - nhifDeductions - nssfDeductions; // calculate gross salary
         const netSalary = grossSalary - kraTax; // calculate net salary

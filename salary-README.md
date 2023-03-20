@@ -1,16 +1,18 @@
-# SALARY CALCULATOR
+# Net Salary Calculator
 # Description
-This program claculates the gross salary and net salary according to one's basic salary and benefits.
-It outputs the value of a person's gross salary and the net salary.
-The gross and net salary depends on the basic salary of a person and the benefits one recieves.
-There are a few deductions to one's basic salary. 
-They include; KRA-TAX-RATES
-              NSSF-RATES
-              NHIF-RATES
-# Project setup
-The program can be run using Node.js or the provided HTML form.To run the program using Node.js, first make sure that you have Node.js installed on your machine. Then, open a terminal or command prompt and navigate to the directory where the program is located. Run the following command,`node salary-script.js <basic salary>,<benefits>` 
-replacing  <basic salary>,<benefits>  with the actuall values
-# Author & License
-This program was created by Mark Mwendwa and is licensed under the MIT License. 
+This is a simple JavaScript program that calculates an individual's net salary based on their basic salary and benefits. The program also calculates the payee (i.e. tax), NHIF deductions, NSSD deductions, gross salary, and net salary.
 
-          
+# Project Setup
+To use this program, simply copy the code from net-salary-calculator.js into your JavaScript project. You can then call the calculateNetSalary function with the individual's basic salary and benefits to get their gross salary and net salary.
+
+example:
+
+const basicSalary = 50000;
+const benefits = 10000;
+const { grossSalary, netSalary } = calculateNetSalary(basicSalary, benefits);
+console.log(`Gross Salary: KES ${grossSalary.toFixed(2)}, Net Salary: KES ${netSalary.toFixed(2)}`);
+
+This will calculate the net salary for an individual with a basic salary of KES 50,000 and benefits of KES 10,000, and log the results to the console.
+
+# Author & License
+This program was created by [Your Name Here] and is licensed under the MIT License. See the LICENSE file for more information.
