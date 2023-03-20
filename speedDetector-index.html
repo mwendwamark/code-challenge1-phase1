@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="speedDetector-index.css">
+	<title>Speed Detector</title>
+  <link rel="stylesheet" href="speedDetector-index.css">
 </head>
 <body>
-    <script src="speedDetector.js"></script>
-    <div><section>CODE-CHALLENGE-2
-        <section>SPEED DETECTION</section>
-        <div>
-            <h1>
-               Speed Detector
-            </h1>
-            <input type="number"id="speedTextBox"/>
-        
-            <button onclick="" type="button" >ENTER SPEED
-              <script>
-                document.write( )
-                    
-                
-              </script>  
-            </button>
-            <div id=""></div></div>
-    <div></div>
+	<h1>Speed Detector</h1>
+  <script src="speedDetector.js"></script>
+	<form>
+		<label for="speed">Speed of car:</label>
+		<input type="number" id="speed" name="speed" min="0"  step="1">
+		<button type="submit">Verify Speed</button>
+	</form>
+	<div id="result"></div>
+	<script>
+		function detectOverSpeeding(speedOfCar) {
+			  // Validation of speed of cars
+        if (speedOfCar === undefined || isNaN(speedOfCar)) {
+        return "Invalid speed";
+    }
 
-    <div></div>
+    if (speedOfCar <= 70) { 
+        return "Ok";
+        //If the speed of the car is less or equal to 70 the output is "ok"
+    } else {
+        var excessSpeedLimit = speedOfCar - 70;
+        var points = Math.floor(excessSpeedLimit / 5);
+        if (points > 12) {
+            return "License suspended";
+        } else {
+            return "Points: " + points;
+        }
+    }
+}
+
+		
+
+		document.querySelector('form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			var speedOfCar = parseFloat(document.querySelector('#speed').value);
+			var result = detectOverSpeeding(speedOfCar);
+			document.querySelector('#result').textContent = result;
+		}
+    );
+	</script>
 </body>
 </html>

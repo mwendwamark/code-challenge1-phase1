@@ -1,4 +1,15 @@
-h1 {
-    color: red;
-    padding:0%;
+h1{
+    color: #023047;
+text-align: center;
+font-size:xx-large;
+font-style: italic;
+}
+button{
+    color:#ffb703;
+    background-color: #023047;
+    font-style: normal;
+}
+label{
+    font-size: larger;
+    color:#219ebc;
 }
