@@ -1,22 +1,14 @@
-# Studnet Grade Generator
-This is a simple web application that allows a user to input a grade between 0 and 100, and displays the corresponding grade letter (A, B, C, D, or F) based on the value of the grade.
+# Student Grade Generator
+# Description
+This is a simple web application that allows users to input a student's grade and get the corresponding letter grade based on a predetermined grading scale.
 
-# Installation
-To use this application, simply download the code files and open the index.html file in a web browser.
-
-# Usage
-1.Enter a grade between 0 and 100 in the input field.
-2.Click the "Submit" button to generate the corresponding grade letter.
-3.The grade letter will be displayed in the box below the input field.
-Contributing
-If you would like to contribute to this project, please submit a pull request or contact the author.
-
-# Credits
-This application was created by Mark Mwendwa. The grading logic was adapted from `getStudentGrade()`
-
-# License
-This code is licensed under the MIT License.
-
+# Project Setup
+1.Clone the repository
+2.Open the index.html file in your preferred web browser
+3.Enter a student's grade in the input field provided
+4.Click the "Submit" button to get the corresponding letter grade
+# Author & License
+This code was written by Mark Mwendwa and is available under the MIT license. Feel free to use and modify this code as you see fit.
 
 
 
